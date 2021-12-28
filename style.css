@@ -1,0 +1,27 @@
+body{
+    background-size:cover ;
+}
+
+
+.heading{
+    width: 100%;
+}
+
+.copy_right_footer{
+    position: fixed;
+    color:white;
+    bottom:0;
+    width:100%;
+    background-color:gray;
+    line-height: 3;
+    text-align: center;
+}
+
+
+canvas {
+    box-shadow: darkblue;
+    
+    
+ 
+    
+}
