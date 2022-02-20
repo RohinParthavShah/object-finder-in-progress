@@ -9,17 +9,17 @@ function preload()
 
 function setup(){
 
-    canvas = createCanvas(480,300);
+    canvas = createCanvas(100,100);
     canvas.center();
     video = createCapture(VIDEO);
-    video.size(480,300);
+    video.size(100,100);
     video.hide();
     objectDetector = ml5.objectDetector('cocossd',modelLoaded);
     document.getElementById("status").innerHTML = "Status: Detecting Objects";
 }
 
 function draw (){
-    image(video,0,0,480,300);
+    image(video,0,0,100,100);
     if(status !=  ""){
         objectDetector.detect(video,gotResult);
         for(i = 0; i < objects.length; i++)
